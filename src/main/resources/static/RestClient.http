@@ -2,10 +2,10 @@ GET http://localhost:8080/books
 
 
 ###
-GET http://localhost:8080/books/1
+GET http://localhost:8080/books/10
 
 ###
-DELETE http://localhost:8080/books/1
+DELETE http://localhost:8080/books/abc
 
 
 ###
@@ -19,6 +19,7 @@ Authorization: Basic admin goodpassword
 ###
 POST http://localhost:8080/books
 Content-Type: application/json
+# Validation failed - book title is null
 
 {
     "name": "I, Robot"
