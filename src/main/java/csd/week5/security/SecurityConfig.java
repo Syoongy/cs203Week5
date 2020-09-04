@@ -32,7 +32,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     /**
-     * TODO: Activity 2 - Authentication
+     * TODO: Activity 2a - Authentication
      * Add code to secure requests to Reviews
      * In particular, only authenticated users would be able to create/update/delete Reviews
      * Hint: Add antMatchers rules
@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      * 
      * 
      * 
-     * TODO: Activity 3 - Authorization
+     * TODO: Activity 2b - Authorization
      * Add roles to specify permissions for each enpoint
      * User role: can add review.
      * Admin role: can add/delete/update books/reviews, and add/list users
@@ -73,6 +73,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Bean
     public BCryptPasswordEncoder encoder() {
+        // auto-generate a random salt internally
         return new BCryptPasswordEncoder();
     }
 }

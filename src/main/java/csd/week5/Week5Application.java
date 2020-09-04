@@ -31,7 +31,7 @@ public class Week5Application {
         
         // Test the RestTemplate client with authentication
         /**
-         * TODO: Activity 2
+         * TODO: Activity 3 (after class)
          * Uncomment the following code and test the changes
          * Here we use our own Rest client to test the service
          * Authentication info has been added int the RestTemplateClient.java
