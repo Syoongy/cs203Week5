@@ -53,6 +53,7 @@ public class SecurityConfig {
      * Note: '*' matches zero or more characters, e.g., /books/* matches /books/20
              '**' matches zero or more 'directories' in a path, e.g., /books/** matches /books/1/reviews 
      */
+    @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
         .httpBasic()
