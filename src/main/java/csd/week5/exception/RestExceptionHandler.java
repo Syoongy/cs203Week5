@@ -23,7 +23,7 @@ import java.util.Map;
  * TODO: Activity 1 - Uncomment the line below (@ControllerAdvice) to designate that 
  * this class is a central place to handle exceptions across your app
  */
-// @ControllerAdvice
+@ControllerAdvice
 public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 
     /**
@@ -36,7 +36,6 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
      * This method handles the case in which validation failed for
      * controller method's arguments.
      */
-    /*
     @Override
     protected ResponseEntity<Object>
     handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
@@ -55,7 +54,7 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
         body.put("path", request.getDescription(false));
         return new ResponseEntity<>(body, headers, status);
 
-    }*/
+    }
 
     /**
      * Handle the case in which arguments for controller's methods did not match the type.
